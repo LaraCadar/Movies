@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="ISO-8859-1">
+		<link type="text/css" href="style.css" rel="stylesheet">
+		<title>Cadastro de Filmes</title>
+	</head>
+	
+	<body>
+		<div class="all">
+		
+		<div class="title">
+			<h1>Cadastro de Filmes</h1>			
+		</div>
+	
+		<div class="form">
+			<form  action="MovieController.do" method="post">
+							
+					<br>Nome do filme:
+					<br><input type="text" name="movieName" required autofocus placeholder="Nome do filme">
+					<br>Diretor:
+					<br><input type="text" name="movieDirector" required placeholder="Diretor do filme">
+					<br>Ano de Lançamento:
+					<br><input type="date" name="movieDate" required placeholder="Ano de Lançamento">
+					<br>Gênero:
+					<br><select name="movieGenre" required>
+							<option value="Comedia">Comedia</option>
+							<option value="Drama">Drama</option>
+							<option value="Romance">Romance</option>
+							<option value="Ação">Ação</option>
+							<option value="Aventura">Aventura</option>
+							<option value="Sci-fi">Sci-fi</option>
+							<option value="Terror">Terror</option>
+							<option value="	Suspense">Suspense</option>
+							<option value="Documentario">Documentario</option>
+							<option value="Animação">Animação</option>
+							<option value="Musical">Musical</option>
+						</select>					
+					
+					<br>Duração:
+					<br><input type="text" name="movieDuration" required placeholder="Tempo de Duração">
+					<br>Sinopse do filme:
+					<br><input type="textarea" name="movieSinopse" required placeholder="Sinopse" >
+	 				<br><br><input type="submit" value="Enviar">
+			</form>
+		</div>
+		</div>
+	</body>
+</html>
